@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed Materials - Property of IBM
+  IBM Sterling Order Management (5725-D10), IBM Order Management (5737-D18)
+  (C) Copyright IBM Corp. 2001,2018  All Rights Reserved.
+  US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4jconfigdelta>
+    <category name="com.wm" class="com.yantra.yfc.log.YFCLogCategory" additivity="false">
+        <level class="com.yantra.yfc.log.YFCLogLevel" value="VERBOSE"/>
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="ALL" />
+        <appender-ref ref="SECURITY_LOG_APPENDER"/>
+    </category>
+</log4jconfigdelta>
